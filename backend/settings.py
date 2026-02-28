@@ -27,7 +27,7 @@ SECRET_KEY = 'django-insecure-q9t^!o7it3z26v%a$%5yc450qc!kk5qa1m-y0b@w4d)ri_a*e)
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = os.environ.get('DEBUG', 'True') == 'True'
 
-ALLOWED_HOSTS = ['*'] # In production this should be set to your Render URL, e.g., os.environ.get('RENDER_EXTERNAL_HOSTNAME')
+ALLOWED_HOSTS = ['daily-budget-buddy-backend.onrender.com', 'localhost', '127.0.0.1']
 
 # Render deployment specific settings
 if 'RENDER_EXTERNAL_HOSTNAME' in os.environ:
@@ -138,7 +138,12 @@ if not DEBUG:
 MEDIA_URL = '/media/'
 MEDIA_ROOT = os.path.join(BASE_DIR, 'media')
 
-CORS_ALLOW_ALL_ORIGINS = True
+CORS_ALLOWED_ORIGINS = [
+    "https://daily-budget-buddyj.vercel.app",
+    "http://localhost:8080",
+    "http://localhost:5173",
+    "http://127.0.0.1:8080",
+]
 
 DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
 
