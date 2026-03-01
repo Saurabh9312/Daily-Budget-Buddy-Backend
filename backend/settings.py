@@ -88,9 +88,9 @@ DATABASES = {
     'default': {
         'ENGINE': 'django.db.backends.postgresql',
         'NAME': 'daily_budget_buddy',
-        'USER': 'daily_budget_buddy_saurabh',
-        'PASSWORD': 'Sau_rabh@123',
-        'HOST': 'localhost',
+        'USER': 'saurabh_parate_user',
+        'PASSWORD': 'Ckl60FqvmBIriAjB3mYzE7evS9MekKrk',
+        'HOST': 'dpg-d6hrf8sr85hc739liqa0-a',
         'PORT': '5432',
     }
 }
