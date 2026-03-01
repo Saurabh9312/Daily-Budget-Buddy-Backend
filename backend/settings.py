@@ -148,7 +148,7 @@ MEDIA_URL = '/media/'
 MEDIA_ROOT = os.path.join(BASE_DIR, 'media')
 
 CORS_ALLOWED_ORIGINS = [
-    "https://daily-budget-buddyj.vercel.app",
+    "https://daily-budget-buddy-red.vercel.app",
     "http://localhost:8080",
     "http://localhost:5173",
     "http://127.0.0.1:8080",
